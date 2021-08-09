@@ -5,9 +5,9 @@ import {animateScroll as scroll} from 'react-scroll'
 import {FaFacebook,FaInstagram,FaYoutube,
         FaTwitter,FaLinkedin} from 'react-icons/fa';
 
-import {FooterContainer, FooterWrap, FooterLinksContainer, 
+import {FooterContainer, FooterWrap,/*  FooterLinksContainer, 
         FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, 
-        FooterLink,SocialMedia,SocialMediaWrap,SocialLogo,
+        FooterLink, */SocialMedia,SocialMediaWrap,SocialLogo,
         WebsiteRights,SocialIcons,SocialIconLink} from './FooterElements';
 
 const Footer = () => {
@@ -18,7 +18,7 @@ const Footer = () => {
     return (
         <FooterContainer>
             <FooterWrap>
-                <FooterLinksContainer>
+                {/* <FooterLinksContainer>
                     <FooterLinksWrapper>
                         <FooterLinkItems>
                             <FooterLinkTitle> About us</FooterLinkTitle>
@@ -55,7 +55,7 @@ const Footer = () => {
                             <FooterLink to="/signin">Terms of Service</FooterLink>
                         </FooterLinkItems>
                     </FooterLinksWrapper>
-                </FooterLinksContainer>
+                </FooterLinksContainer> */}
                 <SocialMedia>
                     <SocialMediaWrap>
                         <SocialLogo to='/' onClick={toggleHome}>

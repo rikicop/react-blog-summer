@@ -74,6 +74,7 @@ export const NavItem = styled.li `
 `;
 
 export const NavLinks = styled(LinkS)`
+        font-weight:600;
         color:#fff;
         display:flex;
         align-items:center;
@@ -97,6 +98,7 @@ export const NavBtn = styled.nav`
 `;
 
 export const NavBtnLink = styled(LinkR)`
+        font-weight: bold ;
         border-radius: 50px;
         background: #01bf71;
         white-space: nowrap;

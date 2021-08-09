@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import Video from '../../videos/video.mp4';
+/* import Video from '../../videos/video.mp4'; */
 import { Button } from '../ButtonElements';
 import {
     HeroContainer,
-    HeroBg,
-    VideoBg,
+   /*  HeroBg,
+    VideoBg, */
     HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowFoward, ArrowRight
 } from './HeroElements';
 
@@ -17,17 +17,16 @@ const HeroSection = () => {
 
     return (
         <HeroContainer id='home'>
-            <HeroBg>
+           {/*  <HeroBg>
                 <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
-            </HeroBg>
+            </HeroBg> */}
             <HeroContent>
-                <HeroH1>Virtual Banking Made Easy</HeroH1>
+                <HeroH1>Bienvenidos a Tecnemas</HeroH1>
                 <HeroP>
-                    Sign up para una cuenta nueva y recibe $250 en
-                    crédito con tu pago.
+                "Instrumentos filosóficos para emprendimientos tecnológicos"
                 </HeroP>
                 <HeroBtnWrapper>
-                    <Button to="signup"
+                    <Button to="principal"
                         onMouseEnter={onHover}
                         onMouseLeave={onHover}
                         primary='true'
@@ -38,7 +37,7 @@ const HeroSection = () => {
                         exact='true'
                         offset={-80}
                     >
-                        Get started {hover ? <ArrowFoward /> : <ArrowRight />}
+                        Bienvenido {hover ? <ArrowFoward /> : <ArrowRight />}
                     </Button>
                 </HeroBtnWrapper>
             </HeroContent>
